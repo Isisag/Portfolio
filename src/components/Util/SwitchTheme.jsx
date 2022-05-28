@@ -1,5 +1,5 @@
 import React from "react";
-import Themes from "../../styles/styles";
+import Themes from "../../styles/Themes";
 import {BsFillMoonStarsFill} from "react-icons/bs";
 import {BsFillSunFill} from "react-icons/bs";
 import { ButtonBG } from "../../styles/styles";

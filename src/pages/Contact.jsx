@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionContainer } from "../styles/styles";
+import { SectionContainer } from "./sections.element";
 import { AiFillLinkedin } from "react-icons/ai";
 import { AiFillGithub } from "react-icons/ai";
 import {HiLocationMarker} from "react-icons/hi"

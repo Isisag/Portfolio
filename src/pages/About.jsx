@@ -1,7 +1,7 @@
 import React from "react";
 import flag from "../assets/chile.svg.png";
 import pic from "../assets/cv-picjpeg.jpeg";
-import { SectionContainer } from "../styles/styles";
+import { SectionContainer } from "./sections.element";
 import {FaCheck} from "react-icons/fa"
 
 const About = () => {

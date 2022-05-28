@@ -1,5 +1,5 @@
 import React from "react";
-import { SectionContainer } from "../styles/styles";
+import { SectionContainer } from "./sections.element";
 import { SiJavascript } from "react-icons/si";
 import { SiCss3 } from "react-icons/si";
 import { SiHtml5 } from "react-icons/si";
