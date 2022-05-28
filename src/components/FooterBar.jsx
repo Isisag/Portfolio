@@ -1,5 +1,5 @@
 import React from "react";
-import { Footer } from "../styles/styles";
+import { Footer } from "../styles/footerbar.element";
 import {FaHeart} from "react-icons/fa"
 
 

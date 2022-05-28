@@ -1,14 +1,18 @@
 import React from "react";
-import { SectionContainer } from "../styles/styles";
-import fondo1 from "../assets/fondo1.jpg"
+import { SectionContainer } from "./sections.element";
 import greekart from "../assets/greek-art.jpg"
 import rick from "../assets/rick-morty-.webp"
 import todo from "../assets/todo-list.png"
 import bakery from "../assets/bakery.png"
-import { SiReact } from "react-icons/si";
 
 
 const Projects = () => {
+
+  let arraicito = ['rojo','verde','azul','amarillo','violeta']
+  arraicito.filter((elemento, indice) => 
+  indice >= 2 ? console.log(elemento) : '')
+  // deberia retornar = rojo,verde,azul,
+  
   return (
     <SectionContainer id="proyectos">
       <h3 className="section-title">Proyectos</h3>
