@@ -38,15 +38,76 @@ export const Navbar = styled.div`
   }
 
   @media(max-width: 450px) {
-    justify-content: space-between;
+    position: relative;
+
+
 
     .bars{
-    display: block;
+     display: block;
     }
 
-    .nav-link {
+    .opacity{
+      opacity: 1;
+    }
+
+   .switch{
+      display: block;
+   }
+
+   .menuClose{
     display: none;
-  }
+    animation: menuAnimationClose .3s ease;
+
+    @keyframes menuAnimationClose {
+      0% {
+        opacity: 1;
+      }
+      50% {
+        opacity: .5;
+      }
+      100% {
+        opacity: 0;
+      }
+    }
+
+   }
+
+   .menuOpen{
+    background-color: rgba(126, 90, 255, 0.9);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(4,.5fr);
+    position: absolute;
+    width: 70%;
+    top: 0;
+    left: 0;
+    padding: 3rem 1rem;
+    margin: 4rem 0rem;
+    height: fit-content;
+    z-index: 6;
+    text-align: left;
+    animation: menuAnimationOpen .3s ease-in-out;
+
+    @keyframes menuAnimationOpen {
+      0% {
+        opacity: 0;
+      }
+      30%{
+        opacity: .2;
+      }
+      50% {
+        opacity: .5;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+
+    a{
+      padding: 1rem 0rem;
+      font-size: 1.5em;
+    }
+   }
 
   }
 

@@ -138,9 +138,8 @@ export const PrincipalTitle = styled.h1`
   width: 100%;
 
   @media(max-width: 450px) {
-   font-weight: 700;
    font-size: 11vh;
-   width: 30%;
+
    margin: 0rem;
    padding: 0rem .3rem;
   }
