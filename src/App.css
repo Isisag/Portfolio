@@ -1,0 +1,73 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Sarabun:ital,wght@0,300;0,400;0,600;0,700;1,300;1,700&display=swap');
+.App {
+  text-align: center;
+}
+
+:root{
+    --color_primario: #7e5aff;
+    --color-primario-alpha: rgba(126, 90, 255, 0.5);
+    --color_primario-2:#8971ff;
+    --color_primario-3:#a28fff;
+    --gris_fondo:#3d3d3d;
+    --gris_fondo-2:#303030;
+    --gris_fondo-3:#686868;
+    --blanco_fondo:#e7e4f9;
+    --titulo_color:white;
+    --textos_color:#6d4ffc;
+    --enlaces_color:#5c74ff;
+    --opacidad-negra: rgba(126, 90, 255, .4);
+    --opacidad-negraa: rgba(0 ,0 ,0 , .7);
+    --opacidad-blanca: rgba(255 ,255 ,255 ,.3);
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.vh{
+  width: 5vh;
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  font-family: 'Sarabun', sans-serif;
+  font-weight:400;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
