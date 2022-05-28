@@ -23,6 +23,16 @@ export const SectionContainer = styled.div`
     place-content: center;
     margin: 1rem auto;
 
+    .dowload{
+          background-color: transparent;
+          padding: .5rem 1rem;
+          border-radius: 10px;
+          border: solid 5px #6d4ffc ;
+          text-decoration: none;
+          color: #6d4ffc;
+          text-transform: uppercase;
+      }
+
     .about-text {
       text-align: right;
       margin: auto 0rem;
@@ -33,9 +43,15 @@ export const SectionContainer = styled.div`
         font-weight: bold;
         font-weight: 0.8em;
       }
-      p {
-        margin: 0.6rem auto;
+      p{
+        margin: 0.8rem auto;
       }
+
+      .margin{
+        margin-bottom: 2rem;
+      }
+
+
     }
 
     .about-info {
@@ -170,8 +186,8 @@ export const SectionContainer = styled.div`
 
       img {
         object-fit: cover;
-        width: 230px;
-        height: 230px;
+        width: 250px;
+        height: 250px;
       }
     }
   }
@@ -180,11 +196,12 @@ export const SectionContainer = styled.div`
 
   .contact {
     display: grid;
+    padding: 2rem 0rem;
     grid-template-columns: repeat(4, 1fr);
 
     a {
       text-decoration: none;
-      color: white;
+      color: ${({ theme }) => theme.text};
     }
 
     svg {
@@ -194,76 +211,80 @@ export const SectionContainer = styled.div`
     .contact-individual {
       padding: 2rem 3rem;
       margin: 0rem 1rem;
+      background-color: ${({ theme }) => theme.bgc2};
 
-      &:hover {
-        background-color: ${({ theme }) => theme.bgc2};
+     
+      p {
+        font-weight: bolder;
       }
     }
   }
 
-  @media(max-width: 450px) {
-  width: fit-content;
-  padding: 1rem 0rem;
-  margin: 0rem auto;
+  @media (max-width: 450px) {
+    width: fit-content;
+    padding: 1rem 0rem;
+    margin: 0rem auto;
 
-  
-  .about {
-    grid-template-columns: repeat(1, 1fr);
+    .about {
+      grid-template-columns: repeat(1, 1fr);
 
-    .about-text {
-      text-align: center;
+      .about-text {
+        text-align: center;
+      }
+
+      .about-info {
+        text-align: center;
+      }
     }
 
-    .about-info {
-      text-align: center;
-    }
-  }
-  
-  
-  .icons {
-    display: grid;
-    grid-template-columns: 1fr;
-
-    .icon-group {
+    .icons {
       display: grid;
-      grid-template-columns: repeat(2,1fr);
-    }
-  }
+      grid-template-columns: 1fr;
 
-  .projects {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-  }
+      .icon-group {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        place-content: center;
 
-
-  .contact {
-    display: grid;
-    grid-template-columns: repeat(1,1fr);
-
-    a {
-      text-decoration: none;
-      color: white;
-    }
-
-    svg {
-      width: 8rem;
-    }
-
-    .contact-individual {
-      padding: 1rem 2rem;
-      margin: .5rem auto;
-
-      &:hover {
-        background-color: ${({ theme }) => theme.bgc2};
+        .icon-individual {
+          margin: 0rem 0.5rem;
+        }
       }
     }
-  }
-  
 
+    .projects {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
 
+      .projects-cards {
+        img {
+          width: 300px;
+          height: 300px;
+        }
+      }
+    }
 
+    .contact {
+      display: grid;
+      grid-template-columns: repeat(1, 1fr);
 
+      a {
+        text-decoration: none;
+        color: white;
+      }
 
+      svg {
+        width: 8rem;
+      }
 
+      .contact-individual {
+        padding: 1rem 2rem;
+        margin: 0.5rem auto;
+
+        &:hover {
+          background-color: ${({ theme }) => theme.bgc2};
+        }
+      }
+    }
   }
 `;

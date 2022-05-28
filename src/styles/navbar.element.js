@@ -20,7 +20,7 @@ export const Navbar = styled.div`
     font-weight: 600;
     margin: 0rem 1rem;
     text-decoration: none;
-    color: #e1daeb;
+    color: ${({ theme }) => theme.navContent};
     transition: all 0.5s ease-in-out;
 
     &:hover {
@@ -33,83 +33,78 @@ export const Navbar = styled.div`
     }
   }
 
-  .bars{
+  .bars {
     display: none;
   }
 
-  @media(max-width: 450px) {
+  @media (max-width: 450px) {
     position: relative;
 
-
-
-    .bars{
-     display: block;
+    .bars {
+      display: block;
     }
 
-    .opacity{
+    .opacity {
       opacity: 1;
     }
 
-   .switch{
+    .switch {
       display: block;
-   }
+    }
 
-   .menuClose{
-    display: none;
-    animation: menuAnimationClose .3s ease;
+    .menuClose {
+      display: none;
+      animation: menuAnimationClose 0.3s ease;
 
-    @keyframes menuAnimationClose {
-      0% {
-        opacity: 1;
-      }
-      50% {
-        opacity: .5;
-      }
-      100% {
-        opacity: 0;
+      @keyframes menuAnimationClose {
+        0% {
+          opacity: 1;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 0;
+        }
       }
     }
 
-   }
+    .menuOpen {
+      background-color: rgba(126, 90, 255, 0.9);
+      display: grid;
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(4, 0.5fr);
+      position: absolute;
+      width: 70%;
+      top: 0;
+      left: 0;
+      padding: 3rem 1rem;
+      margin: 4rem 0rem;
+      height: fit-content;
+      z-index: 6;
+      text-align: left;
+      animation: menuAnimationOpen 0.3s ease-in-out;
 
-   .menuOpen{
-    background-color: rgba(126, 90, 255, 0.9);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4,.5fr);
-    position: absolute;
-    width: 70%;
-    top: 0;
-    left: 0;
-    padding: 3rem 1rem;
-    margin: 4rem 0rem;
-    height: fit-content;
-    z-index: 6;
-    text-align: left;
-    animation: menuAnimationOpen .3s ease-in-out;
+      @keyframes menuAnimationOpen {
+        0% {
+          opacity: 0;
+        }
+        30% {
+          opacity: 0.2;
+        }
+        50% {
+          opacity: 0.5;
+        }
+        100% {
+          opacity: 1;
+        }
+      }
 
-    @keyframes menuAnimationOpen {
-      0% {
-        opacity: 0;
-      }
-      30%{
-        opacity: .2;
-      }
-      50% {
-        opacity: .5;
-      }
-      100% {
-        opacity: 1;
+      a {
+        padding: 1rem 0rem;
+        font-size: 1.5em;
+        color: "#e1daeb";
       }
     }
-
-    a{
-      padding: 1rem 0rem;
-      font-size: 1.5em;
-    }
-   }
-
   }
-
-
 `;

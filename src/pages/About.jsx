@@ -1,5 +1,4 @@
 import React from "react";
-import flag from "../assets/chile.svg.png";
 import pic from "../assets/cv-picjpeg.jpeg";
 import { SectionContainer } from "./sections.element";
 import {FaCheck} from "react-icons/fa"
@@ -18,12 +17,13 @@ const About = () => {
             Mis principales Hobbies son la Fungicultura y jugar minecraft en mis
             tiempos libres.
           </p>
-          <p>
+          <p className="margin">
             Desde muy temprana edad tuve acceso a internet y me apasioné por lo
             que veia en mi pantalla. Vivir como la internet cambio el mundo y las
             comunicaciones, por eso hoy en día estoy enfocada lograr la mejor
             experiencia en la web posible.
           </p>
+          <a className="dowload" href="../assets/isis-aguilar-cv.pdf" download >Descargar CV</a>
         </div>
           <img src={pic} />
           <div className="about-info">

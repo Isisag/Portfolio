@@ -7,6 +7,11 @@ export const Footer = styled.div`
   justify-content: space-around;
   align-items: center;
   background-color: #6e37bf;
+  color: white;
+
+  a:visited{
+    color: white;
+  }
 
   svg {
     color: ${(props) => props.theme.text};

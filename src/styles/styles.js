@@ -109,6 +109,7 @@ export const HomeContainer = styled.div`
     margin: 0rem 0rem 0rem 2rem;
     z-index: 1;
     font-size: 8vh;
+    color: white;
   }
 
   @media(max-width: 450px) {
