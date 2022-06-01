@@ -31,7 +31,7 @@ const About = () => {
             el proceso de aprendizaje porque entiendo que solo los fracasos nos
             llevan al verdadero éxito.
           </p>
-          <a className="dowload" href="../assets/isis-aguilar-cv.pdf" download>
+          <a className="dowload" href="assets/isis-aguilar-cv.pdf" download>
             Descargar CV
           </a>
         </div>
