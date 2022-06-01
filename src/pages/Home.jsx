@@ -9,6 +9,7 @@ import Contact from "../pages/Contact"
 import Projects from "../pages/Projects"
 import Skills from "./Skills";
 
+
 const Home = ({ theme, setTheme }) => {
   return (
     <ContainerDiv id="home">

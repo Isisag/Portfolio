@@ -126,6 +126,7 @@ export const HomeContainer = styled.div`
     font-size: 5vh;
     width: 100%;
   }
+
   }
 `;
 

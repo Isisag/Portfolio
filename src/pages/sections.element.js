@@ -23,15 +23,15 @@ export const SectionContainer = styled.div`
     place-content: center;
     margin: 1rem auto;
 
-    .dowload{
-          background-color: transparent;
-          padding: .5rem 1rem;
-          border-radius: 10px;
-          border: solid 5px #6d4ffc ;
-          text-decoration: none;
-          color: #6d4ffc;
-          text-transform: uppercase;
-      }
+    .dowload {
+      background-color: transparent;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      border: solid 5px #6d4ffc;
+      text-decoration: none;
+      color: #6d4ffc;
+      text-transform: uppercase;
+    }
 
     .about-text {
       text-align: right;
@@ -43,15 +43,23 @@ export const SectionContainer = styled.div`
         font-weight: bold;
         font-weight: 0.8em;
       }
-      p{
+      p {
         margin: 0.8rem auto;
       }
 
-      .margin{
+      .margin {
         margin-bottom: 2rem;
       }
 
+      .icons-home {
+        display: flex;
+        justify-content: end;
 
+        svg {
+          font-size: 2rem;
+          margin: 0rem 1rem;
+        }
+      }
     }
 
     .about-info {
@@ -212,8 +220,15 @@ export const SectionContainer = styled.div`
       padding: 2rem 3rem;
       margin: 0rem 1rem;
       background-color: ${({ theme }) => theme.bgc2};
+      -webkit-box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.88);
+      -moz-box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.88);
+      box-shadow: 10px 10px 17px -7px rgba(0, 0, 0, 0.88);
+      transition: all 0.3s ease-in;
 
-     
+      &:hover {
+        transform: scale(1.1);
+      }
+
       p {
         font-weight: bolder;
       }
@@ -230,6 +245,10 @@ export const SectionContainer = styled.div`
 
       .about-text {
         text-align: center;
+
+        .icons-home {
+          justify-content: center;
+        }
       }
 
       .about-info {
@@ -278,12 +297,8 @@ export const SectionContainer = styled.div`
       }
 
       .contact-individual {
-        padding: 1rem 2rem;
+        padding: 2rem 3rem;
         margin: 0.5rem auto;
-
-        &:hover {
-          background-color: ${({ theme }) => theme.bgc2};
-        }
       }
     }
   }
