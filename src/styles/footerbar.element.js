@@ -10,7 +10,7 @@ export const Footer = styled.div`
   color: white;
 
   a:visited{
-    color: white;
+    color: white !important;
   }
 
   svg {

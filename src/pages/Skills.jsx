@@ -15,6 +15,10 @@ import { SiReactrouter } from "react-icons/si";
 import { SiNodedotjs } from "react-icons/si";
 import { SiFirebase } from "react-icons/si";
 import { SiGit } from "react-icons/si";
+import { SiVuedotjs } from "react-icons/si";
+import { SiNuxtdotjs } from "react-icons/si";
+
+
 
 const Skills = () => {
   return (
@@ -48,17 +52,27 @@ const Skills = () => {
             <progress value="60" min="0" max="100"></progress>
           </div>
           <div className="icon-individual">
-            <SiFirebase />
-            <p>Firebase</p>
-            <progress value="60" min="0" max="100"></progress>
+            <SiVuedotjs />
+            <p>Vue JS</p>
+            <progress value="61" min="0" max="100"></progress>
           </div>
         </div>
 
         <div className="icon-group">
+        <div className="icon-individual">
+            <SiNuxtdotjs />
+            <p>Nuxt JS</p>
+            <progress value="45" min="0" max="100"></progress>
+          </div>
           <div className="icon-individual">
             <SiReactrouter />
             <p>React Router</p>
             <progress value="78" min="0" max="100"></progress>
+          </div>
+          <div className="icon-individual">
+            <SiFirebase />
+            <p>Firebase</p>
+            <progress value="60" min="0" max="100"></progress>
           </div>
           <div className="icon-individual">
             <SiFigma />
@@ -75,7 +89,9 @@ const Skills = () => {
             <p>Material UI</p>
             <progress value="61" min="0" max="100"></progress>
           </div>
-          <div className="icon-individual">
+        </div>
+        <div className="icon-group">
+        <div className="icon-individual">
             <SiStyledcomponents />
             <p>Styled Components</p>
             <progress value="83" min="0" max="100"></progress>
@@ -85,8 +101,6 @@ const Skills = () => {
             <p>Bootstrap</p>
             <progress value="53" min="0" max="100"></progress>
           </div>
-        </div>
-        <div className="icon-group">
           <div className="icon-individual">
             <SiVercel />
             <p>Vercel</p>

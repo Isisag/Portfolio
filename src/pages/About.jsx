@@ -13,7 +13,7 @@ const About = () => {
         <div className="about-text">
           <h3>Soy Isis Aguilar</h3>
           <p>
-            Tengo 23 años. Vivo en chile, y desde chica he tenido interés en
+            Tengo 24 años. Vivo en chile, y desde chica he tenido interés en
             idear soluciones creativas y la innovación. Mis principales Hobbies
             son la Fungicultura y jugar <i>Minecraft</i> en mis tiempos libres.
           </p>
