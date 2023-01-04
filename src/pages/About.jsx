@@ -23,15 +23,18 @@ const About = () => {
             <RiCodeSSlashFill />
           </div>
           <p>
-            Soy una desarrolladora front-end con foco en resolver problemas
-            siempre tomando en cuenta al usuario y sus necesidades.
+            Software developer con experiencia en la creación de aplicaciones
+            web del lado del cliente utilizando frameworks javascript como
+            react, vue y angular, con foco en resolver problemas siempre tomando en cuenta al usuario y
+            sus necesidades. Entusiasta del backend por
+            lo que me gustaría poder adquirir más experiencia en este ámbito.
+            Creadora de arte digital, siempre a la vanguardia de lo que la
+            tecnología nos puede ofrecer.
           </p>
-          <p className="margin">
-            Me considero una persona curiosa, proactiva y abrazando el error en
-            el proceso de aprendizaje porque entiendo que solo los fracasos nos
-            llevan al verdadero éxito.
-          </p>
-          <a className="dowload" href="https://drive.google.com/file/d/1RS7vg7lAqJ9TnH4qg1E5yt0UJF7b2ckp/view?usp=sharing" >
+          <p className="margin"></p>
+          <a
+            className="dowload"
+            href="https://drive.google.com/file/d/1KEkJ8UGjz6WaEI18TvwjsnVdqKVZOIAR/view?usp=sharing">
             Descargar CV
           </a>
         </div>
@@ -45,12 +48,6 @@ const About = () => {
           </p>
           <p>
             <FaCheck /> Trabajo en equipo
-          </p>
-          <p>
-            <FaCheck /> Redacción
-          </p>
-          <p>
-            <FaCheck /> Metodologías ágiles - Scrum
           </p>
           <p>
             <FaCheck /> Español | Nativo

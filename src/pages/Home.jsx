@@ -19,7 +19,7 @@ const Home = ({ theme, setTheme }) => {
         <PrincipalTitle>
           ¡HOLA MUNDO! <br /> SOY ISIS
         </PrincipalTitle>
-        <h2>Front-end Dev</h2>
+        <h2>Software Developer</h2>
       </HomeContainer>
       <About />
       <Skills />
